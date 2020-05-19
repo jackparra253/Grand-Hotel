@@ -19,6 +19,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .menu-icon {
@@ -36,7 +37,7 @@ html {
 .line-1,
 .line-3 {
     width: 0.9rem;
-    transition: width .3s;
+    transition: all .4s;
 }
 
 .menu-icon:hover .line {
@@ -71,6 +72,7 @@ html {
 
 .navigation {
     margin-left: 3rem;
+    left: -20rem;
     position: fixed;
     width: 20rem;
     height: 100%;
@@ -80,6 +82,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: left .8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navigation-heading {
@@ -187,4 +190,22 @@ html {
     color: #fff;
     font-size: .8rem;
     margin-bottom: 1.5rem;
+}
+
+.checkbox:checked~.navigation {
+    left: .02rem;
+}
+
+.checkbox:checked~.sidebar .line-1 {
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 1.5rem;
+}
+
+.checkbox:checked~.sidebar .line-2 {
+    opacity: 0;
+}
+
+.checkbox:checked~.sidebar .line-3 {
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 1.5rem;
 }
