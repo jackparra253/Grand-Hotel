@@ -6,12 +6,12 @@
 }
 
 html {
-    font-size: 62.5;
+    font-size: 32.5;
     box-sizing: border-box;
 }
 
 .sidebar {
-    width: 4rem;
+    width: 3rem;
     height: 100%;
     background-color: #eee;
     position: fixed;
@@ -67,4 +67,124 @@ html {
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
     color: #555;
+}
+
+.navigation {
+    margin-left: 3rem;
+    position: fixed;
+    width: 20rem;
+    height: 100%;
+    background-color: #c7c7c7;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-heading {
+    margin: 10% 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #deaa86;
+    text-align: center;
+}
+
+.navigation-search {
+    position: relative;
+}
+
+.navigation-search-input {
+    height: 1.6rem;
+    width: 15rem;
+    padding: 1rem, 2rem;
+    background-color: rgba(0, 0, 0, .1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: #deaa86;
+    letter-spacing: .1rem;
+    outline: none;
+    border: .1rem solid #555;
+    transition: backgroun-color .3s;
+}
+
+.navigation-search-input:focus {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.navigation-search-btn {
+    border: none;
+    background-color: transparent;
+    color: #deaa86;
+    font-size: 1rem;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
+}
+
+.navigation-search-btn:focus {
+    outline: none;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-item {
+    position: relative;
+}
+
+.navigation-link {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.navigation-link::before {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #deaa86;
+    position: absolute;
+    top: .5rem;
+    left: -2rem;
+    transition: width .5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link::after {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #deaa86;
+    position: absolute;
+    top: .5rem;
+    right: -2rem;
+}
+
+.navigation-link:hover {
+    color: #deaa86;
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after {
+    width: 1rem;
+}
+
+.copyright {
+    color: #fff;
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
 }
