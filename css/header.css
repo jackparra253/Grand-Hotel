@@ -1,0 +1,56 @@
+.header {
+    margin-left: 3rem;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url(../img/gran-hotel-banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.brand {
+    display: flex;
+    cursor: pointer;
+}
+
+.hotel-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 350;
+    color: #ddd;
+    letter-spacing: .2rem;
+    margin-top: auto;
+}
+
+.banner {
+    color: #ddd;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.banner-paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s;
+}
+
+.banner-button {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    padding: 2rem 2.5 rem;
+    font-size: 1rem;
+    color: #333;
+    letter-spacing: .1rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, gold, goldenrod);
+    cursor: pointer;
+}
